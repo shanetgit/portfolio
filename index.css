@@ -1,0 +1,350 @@
+body {
+  background-image: linear-gradient(rgb(7, 91, 112),rgb(189, 189, 38),white);
+}
+#h2 {
+  margin-left: 20px;
+  font-size: 29px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+nav {
+  /*background-color:black;
+  border-top: solid 0.1em black;
+  border-bottom: solid 0.1em black;
+  margin-bottom: 1em;/*This places some space between elements*/
+  border-radius: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav ul li {
+  background-color: black;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  margin:0.75em;
+  /*padding:0.25em;
+   min-width: 12%;*/
+  margin:.59em;
+  list-style-type: none;/*This removes bullet points*/
+  box-shadow:0.5em 0.5em rgb(225, 188, 6);
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;/*This removes the underline from the hyperlink*/
+
+}
+
+/* Top left text */
+.container .top-left {
+  position: relative;
+  top: -225px;
+  left: 16px;
+  font-size: 50px;
+  color: aliceblue;
+  font-weight: 100;
+  font-style: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+
+
+#img,#about{
+  
+  min-width:100%;
+  max-height: 300px;
+  width:100%;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 5px;
+  box-shadow:0.5em 0.5em rgb(225, 188, 6);
+
+ 
+}
+
+
+main{
+  /*border-top: solid 0.3em black;
+  border-bottom: solid 0.3em black;*/
+  margin-bottom: 1em;
+  border-radius: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  line-height: 1.8;
+  letter-spacing: 0px;
+  background-image: linear-gradient(rgb(50, 177, 209),rgb(205, 205, 46),white);
+
+  
+
+  
+}
+
+.project-display-container {
+  border-top: solid 0.3em black;
+  border-bottom: solid 0.3em black;
+  width:100%;
+  height:auto;
+  max-width: 500px;
+
+  
+}
+
+
+
+footer {
+  
+ /* border-top: solid 0.3em black;
+  border-bottom: solid 0.3em black;
+  border-radius: 1em;*/
+  background-image: linear-gradient(rgb(50, 177, 209),rgb(205, 205, 46),white);
+
+
+  box-shadow:0.5em 0.5em rgb(225, 188, 6);
+
+  
+}
+
+/*Begin mobile*/
+@media screen  and (max-width: 639px) {
+  nav ul li {
+      display:inline-block;/*This lists item horizontally*/
+      border-radius: 1em;
+      max-width:50%;
+      box-shadow:0.5em 0.5em rgb(225, 188, 6); 
+      width:100%;
+      height:auto;       
+  }
+
+  nav{
+      border-radius: 1em;
+  }
+
+  #h2 {
+      
+      padding: 20px;
+      background-image: linear-gradient(to right,white,white,black);
+  }
+  
+}
+
+button {
+width:100%;
+height: auto;
+
+
+}
+
+/*End mobile*/
+
+/*Begin tablet*/
+@media screen  and (min-width:640px) {
+  nav ul li {
+      display: inline-block;/*This lists items horizontally and allow them to stretch.*/
+      border-radius: 1em;
+      padding:.7em;
+      margin:0.7em;
+      min-width: 10%;
+     /* border-top: solid .2em black;
+      border-bottom: solid .2em black;*/
+  }
+
+  figure {
+      max-width:100%;
+      height:auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;               
+  }
+  
+  #h2 {
+      
+      padding: 30px;
+      background-image: linear-gradient(to right,white,white,black);
+  }
+  
+  
+}
+/*End tablet*/
+
+/*Begin desktop*/
+@media screen  and (min-width:960px) {
+ /* h2 {
+      text-align:left;
+      margin-right: -100px;
+      padding-right: ;
+     // width:auto;
+      //height: 4.1em;
+  }*/
+  #h2 {
+      
+      padding: 36px;
+      background-image: linear-gradient(to right,white,black,black);
+  }
+  
+  nav {
+      /*background-color: black;*/
+      /*float: right;/*This moves the nav to the right side of the page*/
+      margin-top: -8.2em;/*This moves the nav element above it would normally be*/
+      width:57%;
+      /*border-top: solid 0.2em black;
+      border-bottom: solid 0.2em black;*/
+      display:inline-block;
+      
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+      /*max-width:50%*/
+  }
+  nav ul li {
+      display: inline-block;/*This lists items horizontally and allow them to stretch.*/
+      border-radius: 1em;
+      
+     
+     /* border-top: solid .2em black;
+      border-bottom: solid .2em black;*/
+
+  }
+
+  figure {
+      height: 30px;
+      width: 23%;
+      
+      position:absolute;
+      left:73%
+  }
+
+  
+  
+  
+  
+}
+/*End desktop*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+button {
+  border:1px solid rgba(218, 170, 24, 0.459);/*flat button*/
+  border-radius: 6px; /*flat button*/
+  background-color: rgba(218, 170, 24, 0.459);/*flat button*/
+  font-weight: bold;
+  color: black;
+  
+  
+  
+  
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline;
+
+}
+
+#ht {
+  width: 100%;
+  height:auto;
+  max-width: 50px;
+}
+
+#hub{
+  width: 100%;
+  height:auto;
+  max-width: 105px;
+
+}
+
+footer{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+#contact{
+  font-family: 'Adamina';
+  font-size: 22px;
+}
